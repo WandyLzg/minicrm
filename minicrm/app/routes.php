@@ -14,3 +14,5 @@ $router->get("/notes/delete/{client_id}", [NoteController::class, "delete"]);
 
 $router->post("/rdv/store", [RdvController::class, "store"]);
 $router->get("/rdv/calendar", [RdvController::class, "calendar"]);
+
+$router->get('/dashboard', 'DashboardController@index');
