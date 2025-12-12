@@ -80,3 +80,10 @@ INSERT INTO rdv (client_id, date, description) VALUES
 (4, '2025-01-30 10:30:00', 'Analyse SEO et performance.'),
 (5, '2025-01-23 17:00:00', 'Kick-off du projet e-commerce.'),
 (5, '2025-01-31 09:45:00', 'Avancement sur la gestion des produits.');
+
+CREATE TABLE IF NOT EXISTS stats_events (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  type VARCHAR(50) NOT NULL,
+  ref_id INT NULL,
+  created_at DATETIME
+);
